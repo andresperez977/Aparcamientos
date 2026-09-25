@@ -12,7 +12,7 @@ public class ParallelParkAccess {
 		int numOfThread = 40;
 		Thread[] threads = new Thread[numOfThread];
 		for (int i = 0; i < numOfThread; i++) {
-			Thread t = new EntraceJob(aparcamiento2, "Miguel" + i);
+			Thread t = new EntraceJob(aparcamiento1, "Miguel" + i);
 			threads[i] = t;
 		}
 		for (int i = 0; i < threads.length; i++) {

@@ -12,7 +12,12 @@ public class EntraceJob extends Thread {
 		System.out.println(Thread.currentThread().getName());
 		System.out.println(parking + "object address from thread " + Thread.currentThread().getName() );
 		System.out.println("End the job" + Thread.currentThread().getName());
-		parking.entrarCoche();
+		
+		
+		for (int i = 0; i < 10; i++) {
+			
+			parking.entrarCoche();
+		}
 	}
 	
 }
